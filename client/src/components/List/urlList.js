@@ -18,7 +18,11 @@ class UrlList extends React.Component {
                 <span className="urlNumber">{index + 1}</span>
                 <span className="urlItem">
                   {"Short url: "}
-                  <a className="urlLink" href={`${data.originalURL}`}>
+                  <a
+                    className="urlLink"
+                    href={`${data.originalURL}`}
+                    target="_blank"
+                  >
                     {data.shortURL}
                   </a>
                 </span>
@@ -27,7 +31,11 @@ class UrlList extends React.Component {
               <div className="bottomURL divs">
                 <span className="urlItem paddingLeft">
                   {"Original url: "}
-                  <a className="urlLink" href={data.originalURL}>
+                  <a
+                    className="urlLink"
+                    href={data.originalURL}
+                    target="_blank"
+                  >
                     {data.originalURL}
                   </a>
                 </span>
@@ -39,6 +47,5 @@ class UrlList extends React.Component {
     );
   }
 }
-
 
 export default UrlList;

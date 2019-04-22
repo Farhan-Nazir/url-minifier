@@ -25,6 +25,7 @@ module.exports.shortenURL = (url, req) => {
   if (validate(url)) {
     let originalURL =
     url.includes("http") || url.includes("https") ? url : `http://${url}`;
+
   return { shortURL: getHostname(req) + randomAlphaNumeric(), originalURL };
   } else {
     throw new Error();

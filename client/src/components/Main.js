@@ -38,8 +38,12 @@ class Main extends Component {
   getShortURL = () => {
     const { originalURL, history } = this.state;
     if (this.validateInput(originalURL)) {
-      fetch("/api/" + originalURL, {
-        mode: "no-cors"
+      fetch("/api/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ longURL: originalURL })
       })
         .then(res => res.json())
         .then(data => {
@@ -113,9 +117,6 @@ class Main extends Component {
           >
             {data.shortURL}
           </a>
-        </Typography>
-        <Typography variant="h7" style={{ marginTop: "10px" }}>
-          {data.originalURL}
         </Typography>
 
         <UrlList urlList={history} listTitle={"Recently generated urls"} />

@@ -17,6 +17,7 @@
   padding: 1em;
   text-align: left;
   font-weight: 500;
+  overflow: auto;
 }
 .historyList {
   margin: 1em;
@@ -28,9 +29,7 @@
   text-align: left;
   margin: 0 0 0 1em;
 }
-.urlLink {
-  color: blue;
-}
+
 .urlNumber {
   font-size: 15px;
   font-weight: bolder;
