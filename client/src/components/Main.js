@@ -97,8 +97,8 @@ class Main extends Component {
         />
 
         <Button
-          variant="outlined"
-          color="secondary"
+          variant="contained"
+          color="primary"
           onClick={this.getShortURL}
           disabled={isTrue}
           style={{ height: "57px", margin: "1em " }}
