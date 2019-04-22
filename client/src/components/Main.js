@@ -60,7 +60,7 @@ class Main extends Component {
             this.handleSessionStorage();
           }
         })
-        .catch(err => console.log(err));
+        .catch(err => err);
     } else {
       return this.setState({ error: true, originalURL: "" });
     }
@@ -107,7 +107,8 @@ class Main extends Component {
           disabled={isTrue}
           style={{ height: "57px", margin: "1em " }}
         >
-          Minify it
+        <strong>Minify it</strong>
+         
         </Button>
         <Typography variant="h5" style={{ marginTop: "10px" }}>
           <a

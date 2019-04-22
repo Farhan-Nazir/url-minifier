@@ -22,6 +22,7 @@ class UrlList extends React.Component {
                     className="urlLink"
                     href={`${data.originalURL}`}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {data.shortURL}
                   </a>
@@ -35,6 +36,7 @@ class UrlList extends React.Component {
                     className="urlLink"
                     href={data.originalURL}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {data.originalURL}
                   </a>
