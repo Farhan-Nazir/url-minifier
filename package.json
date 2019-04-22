@@ -8,7 +8,8 @@
     "startServer": "cd server && npm server.js",
     "startClient": "cd client && npm start",
     "install-all": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
-    "buildClient": "cd client && npm run build"
+    "buildClient": "cd client && npm run build",
+    "deploy": "concurrently \"cd server && npm install\" \"cd client && npm install\" \"cd client && npm run build\""
   },
   "author": "Farhan Nazir",
   "license": "ISC",
