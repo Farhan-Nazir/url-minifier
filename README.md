@@ -1,7 +1,8 @@
 ## URL Minifier API Solution
 This is simple API solution to get make the long url to short with 6 alpha numerics for example `http://localhost:5000/eAMT15`.
+<br>
 Last 10 generated urls will be save in session.
-Latest generated url shows always top in list.
+
 
 ### How to Install and Run
 1. Clone repository by:  `git clone https://github.com/Farhan-Nazir/url-minifier.git`
