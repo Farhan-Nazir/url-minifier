@@ -1,0 +1,18 @@
+{
+  "name": "Url-Minifier-Service",
+  "version": "1.0.0",
+  "description": "Simple package for running server and client from root folder",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"cd server && node server.js\" \"cd client && npm start\"",
+    "startServer": "cd server && npm server.js",
+    "startClient": "cd client && npm start",
+    "install-all": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "buildClient": "cd client && npm run build"
+  },
+  "author": "Farhan Nazir",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

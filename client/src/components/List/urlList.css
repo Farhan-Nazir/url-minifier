@@ -1,0 +1,43 @@
+.typographyTitle {
+  text-align: left;
+  padding: 0em 1em;
+}
+.urlList {
+  margin: 1em auto;
+  width: 40%;
+}
+.topURL {
+  font-size: 18px;
+}
+.bottomURL {
+  background: #edf2fe;
+}
+.divs {
+  margin: 2px;
+  padding: 1em;
+  text-align: left;
+  font-weight: 500;
+}
+.historyList {
+  margin: 1em;
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.urlItem {
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+.urlLink {
+  color: blue;
+}
+.urlNumber {
+  font-size: 15px;
+  font-weight: bolder;
+  background: #edf2fe;
+  border: 1px solid #edf2fe;
+  padding: 8px 12px;
+}
+.paddingLeft {
+  padding-left: 2.5em;
+}
