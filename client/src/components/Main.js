@@ -53,12 +53,8 @@ class Main extends Component {
             isDialogOpen: true,
             isTrue: true
           });
-          if (history.length < 10) {
-            this.handleSessionStorage();
-          } else if (history.length === 10) {
-            history.shift();
-            this.handleSessionStorage();
-          }
+          history.length === 10 && history.shift();
+          history.length < 10 && this.handleSessionStorage();
         })
         .catch(err => err);
     } else {
