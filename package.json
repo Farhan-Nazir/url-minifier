@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Simple package for running server and client from root folder",
   "main": "server/server.js",
+  "engines": {
+    "node": "10.14.0",
+    "npm": "^6.5.0"
+  },
   "scripts": {
     "start": "concurrently \"cd server && node server.js\" \"cd client && npm start\"",
     "startServer": "cd server && npm server.js",
