@@ -7,7 +7,6 @@ import {
   DialogTitle,
   Button
 } from "@material-ui/core";
-import "./InformationDialog.css";
 
 class InformationDialog extends React.Component {
   state = {
