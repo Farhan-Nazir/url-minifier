@@ -8,6 +8,7 @@ let randomAlphaNumeric = () => {
     a => a + alphaNumeric[~~(Math.random() * alphaNumeric.length)],
     ""
   )
+  
   return alphaNumeric;
 };
 

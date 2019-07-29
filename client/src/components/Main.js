@@ -15,14 +15,14 @@ class Main extends Component {
   };
 
   componentWillMount() {
-    window.sessionStorage.getItem("data") &&
+    window.localStorage.getItem("data") &&
       this.setState({
-        history: JSON.parse(window.sessionStorage.getItem("data"))
+        history: JSON.parse(window.localStorage.getItem("data"))
       });
   }
 
   componentWillUpdate(nextProps, nextState) {
-    window.sessionStorage.setItem("data", JSON.stringify(nextState.history));
+    window.localStorage.setItem("data", JSON.stringify(nextState.history));
   }
 
   handleOnChange = event => {
@@ -71,11 +71,11 @@ class Main extends Component {
   };
 
   handleSessionStorage = () => {
-    window.sessionStorage.setItem("data", JSON.stringify(this.state.data));
+    window.localStorage.setItem("data", JSON.stringify(this.state.data));
     this.setState({
       history: [
         ...this.state.history,
-        JSON.parse(window.sessionStorage.getItem("data"))
+        JSON.parse(window.localStorage.getItem("data"))
       ]
     });
   };
